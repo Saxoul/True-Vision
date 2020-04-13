@@ -1,0 +1,101 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.tensorflow.lite.examples.detection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:5:5-17
+8        android:minSdkVersion="24"
+8-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:5:5-17
+9        android:targetSdkVersion="28" />
+9-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:5:5-17
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:7:5-65
+11-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:7:22-62
+12
+13    <uses-feature android:name="android.hardware.camera" />
+13-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:9:5-60
+13-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:9:19-57
+14    <uses-feature android:name="android.hardware.camera.autofocus" />
+14-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:10:5-70
+14-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:10:19-67
+15    <uses-feature android:name="android.hardware.camera.ar" />
+15-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:11:5-63
+15-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:11:19-60
+16
+17    <application
+17-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:14:5-34:19
+18        android:allowBackup="false"
+18-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:15:9-36
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.0.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/6397d5c594c8b9f6a26055c8a83cd79d/core-1.0.0/AndroidManifest.xml:22:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/icon"
+21-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:16:9-36
+22        android:label="@string/tfe_od_app_name"
+22-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:17:9-48
+23        android:roundIcon="@mipmap/icon"
+23-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:18:9-41
+24        android:supportsRtl="true"
+24-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:19:9-35
+25        android:theme="@style/AppTheme.ObjectDetection" >
+25-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:20:9-56
+26        <activity android:name="menu.MainActivity" >
+26-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:21:9-26:20
+26-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:21:19-51
+27            <intent-filter>
+27-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:22:13-25:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:23:17-69
+28-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:23:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:24:17-77
+30-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:24:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:27:9-31:20
+34            android:name="org.tensorflow.lite.examples.detection.DetectorActivity"
+34-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:28:13-45
+35            android:label="@string/tfe_od_app_name"
+35-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:29:13-52
+36            android:screenOrientation="portrait" >
+36-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:30:13-49
+37        </activity>
+38        <activity android:name="com.google.ar.sceneform.samples.hellosceneform.HelloSceneformActivity" />
+38-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:32:9-115
+38-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:32:19-103
+39
+40        <meta-data
+40-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:33:9-81
+41            android:name="com.google.ar.core"
+41-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:33:20-53
+42            android:value="required" />
+42-->/home/eisti/deep_learning/TrueVision/app/src/main/AndroidManifest.xml:33:54-78
+43        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+44        <meta-data
+44-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:33:9-35:41
+45            android:name="com.google.ar.core.min_apk_version"
+45-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:34:13-62
+46            android:value="191220000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+46-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:35:13-38
+47        <activity
+47-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:37:9-43:80
+48            android:name="com.google.ar.core.InstallActivity"
+48-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:38:13-62
+49            android:configChanges="keyboardHidden|orientation|screenSize"
+49-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:39:13-74
+50            android:excludeFromRecents="true"
+50-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:40:13-46
+51            android:exported="false"
+51-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:41:13-37
+52            android:launchMode="singleTop"
+52-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:42:13-43
+53            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+53-->[com.google.ar:core:1.16.0] /home/eisti/.gradle/caches/transforms-2/files-2.1/05dcab8abc7079231e5e77b85ecb8204/core-1.16.0/AndroidManifest.xml:43:13-77
+54    </application>
+55
+56</manifest>
