@@ -1,0 +1,103 @@
+{
+  materials: [
+    {
+      name: '7288_barramundi fish_col',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'BarramundiFish_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'BarramundiFish_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'BarramundiFish_occlusionRoughnessMetallic',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/BarramundiFish.gltf',
+    name: 'BarramundiFish',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/BarramundiFish_baseColor.png',
+      name: 'BarramundiFish_baseColor',
+      pipeline_name: 'BarramundiFish_baseColor.png',
+    },
+    {
+      file: 'sampledata/BarramundiFish_occlusionRoughnessMetallic.png',
+      name: 'BarramundiFish_occlusionRoughnessMetallic',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'BarramundiFish_occlusionRoughnessMetallic.png',
+    },
+    {
+      file: 'sampledata/BarramundiFish_normal.png',
+      name: 'BarramundiFish_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'BarramundiFish_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}

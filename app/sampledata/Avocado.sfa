@@ -1,0 +1,103 @@
+{
+  materials: [
+    {
+      name: '2256_Avocado_d',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Avocado_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Avocado_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'Avocado_roughnessMetallic',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/Avocado.gltf',
+    name: 'Avocado',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/Avocado_baseColor.png',
+      name: 'Avocado_baseColor',
+      pipeline_name: 'Avocado_baseColor.png',
+    },
+    {
+      file: 'sampledata/Avocado_roughnessMetallic.png',
+      name: 'Avocado_roughnessMetallic',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'Avocado_roughnessMetallic.png',
+    },
+    {
+      file: 'sampledata/Avocado_normal.png',
+      name: 'Avocado_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'Avocado_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}

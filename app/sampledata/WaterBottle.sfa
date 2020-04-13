@@ -1,0 +1,108 @@
+{
+  materials: [
+    {
+      name: 'BottleMat',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'WaterBottle_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'WaterBottle_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'WaterBottle_occlusionRoughnessMetallic',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          emissive: 'WaterBottle_emissive',
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/WaterBottle.gltf',
+    name: 'WaterBottle',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/WaterBottle_baseColor.png',
+      name: 'WaterBottle_baseColor',
+      pipeline_name: 'WaterBottle_baseColor.png',
+    },
+    {
+      file: 'sampledata/WaterBottle_occlusionRoughnessMetallic.png',
+      name: 'WaterBottle_occlusionRoughnessMetallic',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'WaterBottle_occlusionRoughnessMetallic.png',
+    },
+    {
+      file: 'sampledata/WaterBottle_normal.png',
+      name: 'WaterBottle_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'WaterBottle_normal.png',
+    },
+    {
+      file: 'sampledata/WaterBottle_emissive.png',
+      name: 'WaterBottle_emissive',
+      pipeline_name: 'WaterBottle_emissive.png',
+    },
+  ],
+  version: '0.54:2',
+}
